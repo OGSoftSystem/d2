@@ -60,7 +60,7 @@ const ContactForm = () => {
         onSubmit={form.handleSubmit(onSubmitForm)}
         className="rounded-4xl px-10 py-8 bg-app-black md:w-5/12 "
       >
-        <h4 className="text-primary-foreground mb-4 text-lg font-semibold">
+        <h4 className="text-app-white mb-6 text-lg font-semibold">
           Contact Us
         </h4>
 
@@ -104,7 +104,7 @@ const ContactForm = () => {
           title="Send"
           isSubmitting={submitting}
           spinnerClassName="text-white"
-          className="bg-white text-accent-foreground mt-6 self-end"
+          className="bg-app-white text-accent-foreground mt-6 cursor-pointer"
         />
       </form>
     </Form>

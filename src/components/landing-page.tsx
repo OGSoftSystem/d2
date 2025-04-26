@@ -18,8 +18,8 @@ const LandingPage = () => {
         </h1>
       </div>
 
-      <div className="absolute top-5 md:top-12 ">
-        <div className="relative w-[120px] h-[120px] md:w-[180px] md:h-[180px] ">
+      <div className="absolute top-7 md:top-12 ">
+        <div className="relative w-[100px] h-[100px] md:w-[150px] md:h-[150px] ">
           <Image src={"/img/d2-logo.svg"} fill alt="logo" />
         </div>
       </div>

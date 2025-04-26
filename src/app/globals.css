@@ -169,5 +169,5 @@
   @apply uppercase text-3xl md:text-5xl font-bold text-accent-foreground;
 }
 @utility inv-description {
-  @apply text-xl md:text-3xl  font-semibold;
+  @apply text-xl md:text-3xl font-semibold;
 }

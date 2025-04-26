@@ -6,35 +6,25 @@ const Investigation = () => {
   return (
     <div className="flex justify-between">
       <div className="px-6 mx-auto">
-        <div className="space-y-8 p-10 paddingY w-full flex flex-col items-center mx-auto md:w-[30rem]">
-          <h1 className="inv-title pt-10">INVESTIGATION</h1>
-
-          <p className="inv-description">
-            Our investigative team hails from law enforcement, government and
-            the financial sector.
-          </p>
-        </div>
-        <Separator className="bg-black md:mt-10" />
-
-        <div className="space-y-8 p-10 paddingY flex flex-col items-center mx-auto w-full md:w-[30rem]">
-          <h1 className="inv-title">DUE DILIGENCE</h1>
-
-          <p className="inv-description">
-            Our due diligence is based on an extensive global human resource
+        <Item
+          title="INVESTIGATION"
+          description=" Our investigative team hails from law enforcement, government and
+            the financial sector."
+          showSeparator
+        />
+        <Item
+          title="DUE DILIGENCE"
+          description=" Our due diligence is based on an extensive global human resource
             network, comprehensive open- source research, experience, and local
-            and industry knowledge.
-          </p>
-        </div>
-        <Separator className="bg-black md:mt-10" />
-        <div className="space-y-8 p-10 paddingY w-full flex flex-col items-center mx-auto md:w-[30rem]">
-          <h1 className="inv-title">ANALYSIS</h1>
-
-          <p className="inv-description">
-            Our investigations and analysis assist firms to make strategic
-            fact-based decisions with maximum insight.
-          </p>
-          {/* <Separator className="bg-black" /> */}
-        </div>
+            and industry knowledge."
+          showSeparator
+        />
+        <Item
+          title="ANALYSIS"
+          description="  Our investigations and analysis assist firms to make strategic
+            fact-based decisions with maximum insight."
+          showSeparator={false}
+        />
       </div>
 
       <div className="hidden md:block">
@@ -53,3 +43,24 @@ const Investigation = () => {
 };
 
 export default Investigation;
+
+function Item({
+  title,
+  description,
+  showSeparator,
+}: {
+  title: string;
+  description: string;
+  showSeparator: boolean;
+}) {
+  return (
+    <>
+      <div className="space-y-6 p-10 paddingY w-full flex flex-col  md:w-[30rem]">
+        <h1 className="inv-title pt-10">{title}</h1>
+
+        <p className="inv-description">{description}</p>
+      </div>
+      {showSeparator && <Separator className="bg-black md:mt-10" />}
+    </>
+  );
+}

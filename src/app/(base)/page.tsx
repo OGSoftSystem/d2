@@ -11,19 +11,15 @@ const Home = () => {
       <LandingPage />
 
       <div className="about-image paddingY">
-        <MaxWidthContainer className="relative paddingY">
+        <MaxWidthContainer className="relative">
           <AboutPage />
         </MaxWidthContainer>
       </div>
-      
-      <div>
 
-       <Investigation />
-        
-      </div>
+      <Investigation />
 
       <div className="contact-image paddingY">
-        <MaxWidthContainer className="md:flex md:justify-end  paddingY">
+        <MaxWidthContainer className="md:flex md:justify-end  ">
           <ContactPage />
         </MaxWidthContainer>
       </div>
