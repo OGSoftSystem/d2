@@ -2,7 +2,7 @@
 
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Form } from "./form";
+import { Form } from "./ui/form";
 
 import { ContactSchema, ContactSchemaType } from "@/lib/validations";
 // import { sendRequestEmail } from "@/lib/mailer/mail.actions";

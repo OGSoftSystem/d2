@@ -5,21 +5,25 @@ import MaxWidthContainer from "./max-width-container";
 const Footer = () => {
   return (
     <footer className="bg-app-black paddingY">
-      <MaxWidthContainer className="flex justify-between">
+      <MaxWidthContainer className="flex justify-between items-center">
         <div className="my-4">
-          <p className="text-app-white md:text-xl">+1 (213) 510-0621 </p>
+          <p className="text-app-white md:text-lg hover:text-white cursor-pointer">
+            +1 (213) 510-0621{" "}
+          </p>
           <Link
-            className="text-app-white md:text-xl"
+            className="text-app-white md:text-lg hover:text-white"
             href={"mailto:info@d2corpintel.com"}
           >
             info@d2corpintel.com
           </Link>
         </div>
 
-        <div className="flex space-x-3 items-center">
-          <p className="text-app-white">Terms</p>
-          <p className="text-app-white">Privacy</p>
-        </div>
+        <Link
+          href={"/terms"}
+          className="text-app-white hover:text-white md:text-lg"
+        >
+          Terms
+        </Link>
       </MaxWidthContainer>
     </footer>
   );

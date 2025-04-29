@@ -11,6 +11,7 @@ const LandingPage = () => {
           fill
           alt="banner"
           className="object-contain"
+          priority
         />
 
         <h1 className="text-primary-background z-10 text-center text-2xl md:text-6xl italic uppercase font-bold">
@@ -19,8 +20,8 @@ const LandingPage = () => {
       </div>
 
       <div className="absolute top-7 md:top-12 ">
-        <div className="relative w-[100px] h-[100px] md:w-[150px] md:h-[150px] ">
-          <Image src={"/img/d2-logo.svg"} fill alt="logo" />
+        <div className="relative w-[100px] h-[100px] md:w-[120px] md:h-[120px] xl:w-[150px] xl:h-[150px] 2xl:w-[180px] 2xl:h-[180px]">
+          <Image src={"/img/d2-logo.svg"} fill alt="logo" priority />
         </div>
       </div>
     </MaxWidthContainer>

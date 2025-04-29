@@ -55,7 +55,7 @@ function Item({
 }) {
   return (
     <>
-      <div className="space-y-6 p-10 paddingY w-full flex flex-col  md:w-[30rem]">
+      <div className="space-y-6 p-10 paddingY w-full flex flex-col  md:w-[30rem] mb-6 md:mb-0">
         <h1 className="inv-title pt-10">{title}</h1>
 
         <p className="inv-description">{description}</p>
