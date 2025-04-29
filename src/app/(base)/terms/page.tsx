@@ -27,9 +27,17 @@ const TermsPage = () => {
       <div className="space-y-4 mb-4">
         <h1 className="terms-heading-text">TERMS</h1>
         <p className="p-text">
-          These are the Terms of Use for www.d2corpintel.com and its connected
-          webpages, microsites and portals (the “Site”). The Site is operated by
-          D2 (the “Company”).
+          These are the Terms of Use for{" "}
+          <Link
+            className="underline"
+            href={
+              "https://web.archive.org/web/20230313163521/https://www.d2corpintel.com/"
+            }
+          >
+            www.d2corpintel.com
+          </Link>{" "}
+          and its connected webpages, microsites and portals (the “Site”). The
+          Site is operated by D2 (the “Company”).
         </p>
 
         <p className="p-text">
