@@ -1,4 +1,5 @@
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 
 export default function BaseLayout({
   children,
@@ -7,7 +8,7 @@ export default function BaseLayout({
 }>) {
   return (
     <div className="w-full flex flex-col min-h-screen bg-app-white">
-      {/* <Header /> */}
+      <Header />
       <main className="flex-1">{children}</main>
       <Footer />
     </div>
