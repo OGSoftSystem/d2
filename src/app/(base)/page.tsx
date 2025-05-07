@@ -1,5 +1,5 @@
 import AboutPage from "@/components/about-page";
-import ContactPage from "@/components/contact-page";
+// import ContactPage from "@/components/contact-page";
 import Investigation from "@/components/investigation-page";
 import LandingPage from "@/components/landing-page";
 import MaxWidthContainer from "@/components/max-width-container";
@@ -18,11 +18,11 @@ const Home = () => {
 
       <Investigation />
 
-      <div className="contact-image paddingY">
+      {/* <div className="contact-image paddingY">
         <MaxWidthContainer className="md:flex md:justify-end  ">
           <ContactPage />
         </MaxWidthContainer>
-      </div>
+      </div> */}
     </>
   );
 };

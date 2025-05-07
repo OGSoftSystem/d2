@@ -154,7 +154,7 @@
   @apply py-8 md:py-16 lg:py-20;
 }
 @utility card {
-  @apply rounded-4xl bg-app-white p-10 space-y-3;
+  @apply rounded-4xl bg-app-white dark:bg-app-white p-10 space-y-3;
 }
 @utility card-title {
   @apply text-xl md:text-2xl font-bold uppercase;

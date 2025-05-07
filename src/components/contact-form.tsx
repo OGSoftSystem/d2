@@ -5,7 +5,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Form } from "./ui/form";
 
 import { ContactSchema, ContactSchemaType } from "@/lib/validations";
-// import { sendRequestEmail } from "@/lib/mailer/mail.actions";
 
 import {
   CustomFormInput,
@@ -13,6 +12,8 @@ import {
   CustomSubmitBtn,
 } from "./form-inputs";
 import { Separator } from "./ui/separator";
+import { sendEmailToContact } from "@/mail/mail.actions";
+import { toast } from "sonner";
 
 const ContactForm = () => {
   const initialValues = {
@@ -26,31 +27,23 @@ const ContactForm = () => {
     resolver: zodResolver(ContactSchema),
   });
   const submitting = form.formState.isSubmitting;
-  // const { toast } = useToast();
 
-  const onSubmitForm = async (data: ContactSchemaType) => {
+ const onSubmitForm = async (data: ContactSchemaType) => {
     try {
-      // const { success }: { success: boolean } = await sendRequestEmail(data);
-      await new Promise((resolve) => setTimeout(resolve, 300));
+      const { success }: { success: boolean } = await sendEmailToContact(data);
 
-      console.log(data);
-
-      // if (success) {
-      //   form.reset();
-      // }
-      //   toast({
-      //     title: "Successful",
-      //     description: "Message sent successfully",
-      //     variant: "default",
-      //   });
+      if (success) {
+        toast("Successful", {
+          description: "Thank you for reaching out.",
+        });
+        form.reset();
+      }
     } catch (error) {
       console.log(error);
 
-      // toast({
-      //   title: "Something went wrong",
-      //   description: "Could not send request",
-      //   variant: "destructive",
-      // });
+      toast("Something went wrong", {
+        description: "Could not send request",
+      });
     }
   };
 
@@ -60,7 +53,7 @@ const ContactForm = () => {
         onSubmit={form.handleSubmit(onSubmitForm)}
         className="rounded-4xl px-10 py-8 bg-app-black md:w-5/12 "
       >
-        <h4 className="text-app-white mb-6 text-lg font-semibold">
+        <h4 className="text-app-white dark:text-app-white mb-6 text-lg font-semibold">
           Contact Us
         </h4>
 
