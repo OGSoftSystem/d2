@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+Allow: https://d2corpintel.com//terms
+
+Sitemap: https://d2corpintel.com//sitemap.xml

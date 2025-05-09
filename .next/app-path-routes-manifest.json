@@ -1,0 +1,10 @@
+{
+  "/robots.txt/route": "/robots.txt",
+  "/opengraph-image.png/route": "/opengraph-image.png",
+  "/favicon.ico/route": "/favicon.ico",
+  "/twitter-image.png/route": "/twitter-image.png",
+  "/sitemap.xml/route": "/sitemap.xml",
+  "/_not-found/page": "/_not-found",
+  "/(base)/page": "/",
+  "/(base)/terms/page": "/terms"
+}
