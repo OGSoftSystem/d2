@@ -20,7 +20,7 @@ const LandingPage = () => {
 
       <div className="absolute top-8 md:top-12">
         <div className="relative w-[100px] h-[100px] md:w-[120px] md:h-[120px] xl:w-[150px] xl:h-[150px] 2xl:w-[180px] 2xl:h-[180px]">
-          <Image src={"/img/d2-logo.svg"} fill alt="logo" priority />
+          <Image src={"/img/d2-logo-2.png"} fill alt="logo" priority />
         </div>
       </div>
     </MaxWidthContainer>

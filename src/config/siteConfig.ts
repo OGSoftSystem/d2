@@ -15,5 +15,5 @@ export const siteConfig = {
     name: "OGSoft Solutions",
     url: "https://ogsoftsolutions.com",
   },
-  baseUrl: "https://www.d2corpintel.com/",
+  baseUrl: "https://d2corpintel.com/",
 };
