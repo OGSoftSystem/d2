@@ -12,7 +12,7 @@ export const siteConfig = {
     "exceptional",
   ],
   author: {
-    name: "OGSoft Solutions",
+    name: "OGSoft Solutions Ltd.",
     url: "https://ogsoftsolutions.com",
   },
   baseUrl: "https://d2corpintel.com/",
